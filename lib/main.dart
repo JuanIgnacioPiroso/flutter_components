@@ -19,7 +19,12 @@ class MyApp extends StatelessWidget {
         'listview2':(context) => const Listview1Screen(),
         'alert':(context) => const AlertScreen(),
         'card':(context) => const CardScreen()
-      }
+      },
+
+      onGenerateRoute: (settings){
+
+        return MaterialPageRoute(builder: (context) => const AlertScreen());
+      },
     );
   }
 }
