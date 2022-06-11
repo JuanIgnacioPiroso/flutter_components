@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class Listview2Screen extends StatelessWidget {
@@ -22,7 +23,6 @@ class Listview2Screen extends StatelessWidget {
             onTap: (){
 
               final game = options[i];
-              print(game);
             },
      
           ),
