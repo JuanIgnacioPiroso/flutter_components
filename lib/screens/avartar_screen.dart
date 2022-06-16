@@ -11,7 +11,7 @@ class AvatarScreen extends StatelessWidget {
         title: const Text('Juan Ignacio Piroso'),
         actions: [
           Container(
-            margin: const EdgeInsets.only(right: 5),
+            margin: const EdgeInsets.only(right: 15),
             child: const CircleAvatar(
               backgroundColor: Colors.white,
               child: Text('JP'),
