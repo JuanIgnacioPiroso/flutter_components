@@ -1,11 +1,12 @@
-import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_components/theme/app_theme.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Material App Bar'),
         ),
         body: Center(
+          // ignore: avoid_unnecessary_containers
           child: Container(
             child: const Text('Hello World'),
           ),

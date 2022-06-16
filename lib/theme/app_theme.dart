@@ -22,7 +22,28 @@ class AppTheme {
         style:  TextButton.styleFrom(primary: primary),
 
 
+      ),
+
+      // FloatingActionButtons
+
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        backgroundColor: primary,
+        elevation: 5,
+
+
+      ),
+
+      // ElevatedButtons
+
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+            primary: AppTheme.primary,
+            shape: const StadiumBorder(),
+            elevation: 0,
+          ),
       )
+
+
       
       
       );

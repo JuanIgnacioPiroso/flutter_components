@@ -1,5 +1,6 @@
-// ignore: file_names
-import 'package:flutter/material.dart';
+// ignore_for_file: file_names
+
+import 'package:flutter/material.dart' show AppBar, BuildContext, Colors, Divider, Icon, Icons, Key, ListTile, ListView, Scaffold, StatelessWidget, Text, Widget;
 
 class Listview2Screen extends StatelessWidget {
 
@@ -22,6 +23,7 @@ class Listview2Screen extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios_outlined, color: Colors.indigo,),
             onTap: (){
 
+              // ignore: unused_local_variable
               final game = options[i];
             },
      
