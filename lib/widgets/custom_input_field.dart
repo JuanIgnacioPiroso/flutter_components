@@ -10,9 +10,12 @@ class CustomInputField extends StatelessWidget {
   final TextInputType? keyboardType;
   final bool isPassword;
 
+  final String formProperty;
+  final Map<String, String> formValues;
+
 
   const CustomInputField({
-    Key? key, this.hintText, this.labelText, this.helperText, this.icon, this.suffixIcon, this.keyboardType, this.isPassword = false,
+    Key? key, this.hintText, this.labelText, this.helperText, this.icon, this.suffixIcon, this.keyboardType, this.isPassword = false, required this.formProperty, required this.formValues,
   }) : super(key: key);
 
   @override
@@ -22,9 +25,8 @@ class CustomInputField extends StatelessWidget {
       obscureText: isPassword,
       textCapitalization: TextCapitalization.words,
       keyboardType: keyboardType,
-      onChanged: (value) {
-        print('value: $value');
-      },
+      onChanged: (value) => formValues[formProperty] = value,
+    
 
       validator: (value){
 
